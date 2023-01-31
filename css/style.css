@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#39C4FF, #1B53E3);
+}
+
+@font-face {
+    font-family: "Steppe";
+    src: url("../Fonts/Steppe-Light.woff");
+}
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    width: 100%;
+    background: #0047FF;
+}
+
+.header-osn {
+    width: 60%;
+    margin: auto;
+    height: 60px;
+}
+
+.inner-header {
+    background: #0047FF;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.inner-header a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Speppe', sans-serif, bold;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.inner-header a:hover {
+    color: rgb(203, 203, 203);
+}
+
+
+.wrapper {
+    width: 900px;
+    min-height: 1000px;
+    background: linear-gradient(#39C4FF);
+    margin: auto;
+    margin-top: 40px;
+}
+
+.inner-main h1{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Speppe', sans-serif, bold;
+    text-align: left;
+    padding-top: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.inner-main p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Speppe', sans-serif, bold;
+    text-align: left;
+    margin: 20px;
+}
+
+
+
+/* Футер */
+
+.container {
+    background: #4F4F4F;
+    width: 100%;
+    min-height: 300px;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 18%;
+}
+
+.clo-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 20%;
+}
+
+.yt {
+    width: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.yt a{
+    margin-bottom: 7px;
+}
+.clo-1 a{
+    color: white;
+    font-size: 14px;
+    font-family: "Steppe";
+    text-decoration: none;
+}
+
+.clo-1 a:hover{
+    color: rgb(205, 205, 205);
+}
+
+.clo-1 h1{
+    color: white;
+    font-size: 18px;
+    font-family: "Steppe";
+    margin-top: -6%;
+}
+
+.clo-1 p{
+    color: white;
+    font-size: 14px;
+    font-family: "Steppe";
+}
