@@ -13,6 +13,8 @@ body {
     src: url("../Fonts/Steppe-Light.woff");
 }
 
+
+/* Анимация */
 .school {
     position: relative;
     margin: 3%;
@@ -159,13 +161,25 @@ li {
 /* Контакты */
 .container2 {
     width: 900px;
-    min-height: 500px;
+    min-height: 1000px;
     margin: auto;
     font-family: "Steppe";
 }
 
-.inner-image {
-    width: 500px;
+.image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    float: left;
+}
+
+.text {
+    margin-top: 100px;
+}
+
+.inner-image img{
+    width: 200px;
+    height: 200px;
     margin-top: 50px;
 }
 
