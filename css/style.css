@@ -13,6 +13,28 @@ body {
     src: url("../Fonts/Steppe-Light.woff");
 }
 
+.school {
+    position: relative;
+    margin: 3%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+.school img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+.school:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+
 li {
     list-style-type: none;
 }
