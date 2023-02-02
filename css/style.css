@@ -4,133 +4,130 @@
     padding: 0;
 }
 
-body {
-    background: linear-gradient(#39C4FF, #396beb);
-}
-
-@font-face {
-    font-family: "Steppe";
-    src: url("../Fonts/Steppe-Light.woff");
-}
-
-
-/* Анимация */
-.school {
-    position: relative;
-    margin: 3%;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-.school img {
-    max-width: 100%;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  
-.school:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-
-
-li {
-    list-style-type: none;
-}
-
-.header {
+header{
     width: 100%;
-    background: #0047FF;
-}
-
-.header-osn {
-    width: 60%;
-    margin: auto;
-    height: 60px;
-}
-
-.inner-header {
-    background: #0047FF;
-    height: 60px;
+    height: 70px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+
 }
 
-.inner-header a{
-    color: white;
+.about ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+header a{
+    color: black;
     text-decoration: none;
-    font-family: 'Speppe', sans-serif, bold;
-    font-size: 16px;
+    font-family: 'Unbounded';
+    font-size: 14px;
+    margin: 10px;
+}
+
+header a:hover{
+    color: rgb(152, 152, 152);
+}
+
+.logo, .about {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+.about li {
+    display: inline-block;
+}
+
+
+
+
+
+.container {
+    width: 70%;
+    min-height: 1700px;
+    margin: auto;
+}
+
+.first_page h1{
+    font-size: 25px;
+    font-family: 'Unbounded';
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 70px;
     margin-left: 50px;
 }
 
-.inner-header a:hover {
-    color: rgb(203, 203, 203);
+.size-news1 {
+    width: 670px;
+}
+
+.size-news2 {
+    width: 300px;
+}
+
+.text-1{
+    color: black;
+    font-size: 14px;
+    font-family: 'Unbounded';
+    text-align: justify;
+    margin-top: 30px;
 }
 
 
-.wrapper {
-    width: 900px;
-    min-height: 1000px;
-    background: linear-gradient(#39C4FF);
-    margin: auto;
-    margin-top: 40px;
-}
 
-.inner-main h1{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    font-family: 'Speppe', sans-serif, bold;
-    text-align: left;
-    padding-top: 20px;
-    margin: 20px;
-    text-decoration: none;
-}
-
-.inner-main p{
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-family: 'Speppe', sans-serif, bold;
-    text-align: left;
-    margin: 20px;
-}
 
 
 
 /* Футер */
 
-.container {
-    background: #4F4F4F;
+.container-2 {
+    width: 100%;
+    min-height: 300px;
+}
+
+.footer {
+    background: #242424;
     width: 100%;
     min-height: 300px;
 }
 .row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 18%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .clo-1 {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 20%;
 }
 
 .yt {
-    width: 20px;
+    width: 20px, 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 20px 250px;
 }
 .yt a{
     margin-bottom: 7px;
 }
 .clo-1 a{
     color: white;
-    font-size: 14px;
-    font-family: "Steppe";
+    font-size: 12px;
+    font-family: 'Unbounded', cursive;
     text-decoration: none;
 }
 
@@ -140,56 +137,34 @@ li {
 
 .clo-1 h1{
     color: white;
-    font-size: 18px;
-    font-family: "Steppe";
+    font-size: 16px;
+    font-family: 'Unbounded', cursive;
     margin-top: -6%;
 }
 
 .clo-1 p{
     color: white;
-    font-size: 14px;
-    font-family: "Steppe";
+    font-size: 12px;
+    font-family: 'Unbounded', cursive;
 }
 
 
 
 
-
-
-
-
-/* Контакты */
-.container2 {
-    width: 900px;
-    min-height: 1000px;
-    margin: auto;
-    font-family: "Steppe";
-}
-
-.image {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    float: left;
-}
-
-.text {
-    margin-top: 100px;
-}
-
-.inner-image img{
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
-}
-
-.text h1{
-    font-size: 25px;
-    color: white;
+/* Анимация */
+    .school {
+        position: relative;
+        cursor: pointer;
+    }
     
-}
-
-.text p{
-    font-size: 15px;
-    color: white;
-}
+    .school img {
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    
+    .school:hover img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
